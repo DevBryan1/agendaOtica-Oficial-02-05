@@ -3,6 +3,7 @@ session_start();
 
 class Cliente {
 
+    #conectando ao banco de dados
     private $pdo;
     public function __construct(){
         $dbname = 'banco_soares';
@@ -11,8 +12,22 @@ class Cliente {
         $this->pdo = new PDO("mysql:dbname=".$dbname.";host=localhost;", $dbuser, $dbpass);
     }
 
+    #Verificando se a imagem está sendo puxada
     public function dadosCliente($nome, $telefone, $email, $comentario, $img){
+        if($img['error'] == 0){
+            echo 'Veio';
+            $formatosImg = [
+                "image/png",
+                "image/jpeg",
+                "image/jpg",
+                "image/webp"
+            ];
+            echo '<pre>';
+            print_r($formatosImg);
 
+        }else{
+         echo 'Não veio';
+        }
     }
 }
 //receber filtrar e validar dados 
