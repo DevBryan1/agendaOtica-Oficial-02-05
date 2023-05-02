@@ -3,21 +3,31 @@ session_start();
 
 class Cliente {
 
-}
-if(isset($_POST["name"])){    
-    echo '<pre>';
-    print_r($_POST);
-    print_r($_FILES);
+    private $pdo;
+    public function __construct(){
+        $dbname = 'banco_soares';
+        $dbuser = 'root';
+        $dbpass = '';
+        $this->pdo = new PDO("mysql:dbname=".$dbname.";host=localhost;", $dbuser, $dbpass);
+    }
 
+    public function dadosCliente($nome, $telefone, $email, $comentario, $img){
+
+    }
+}
+//receber filtrar e validar dados 
+if(isset($_POST["name"])){    
     $nome = addslashes($_POST['name']);
     $telefone = addslashes($_POST['telefone']);
     $email = addslashes($_POST['email']);
     $comentario = addslashes($_POST['comentario']);
     $img = $_FILES['receita'];
 
-    if(!empty($nome) && ){
-
+    //vendo se não está vazio o input
+    if(!empty($nome) && !empty($telefone) && !empty($comentario)){
+        $c = new Cliente();
+        $c->dadosCliente($nome, $telefone, $email, $comentario, $img);
     }
-}
+}   
 
 ?>
