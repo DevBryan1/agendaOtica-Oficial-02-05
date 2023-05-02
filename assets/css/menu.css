@@ -1,0 +1,118 @@
+/*O css do menu vai aqui*/
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.imagemLogo{
+    width: 180px;
+    position: relative;
+    top: 10px;
+    left: 55px;
+
+}
+.inputSearch{
+    outline: none;
+    border: none;
+}
+#iconeBuscar{
+    background-color: white;
+    position: relative;
+    left: -1px;
+    outline: none;
+    width: 20px;
+    height: 26px;
+    padding-right: 5px;
+}
+.botoesNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 5px;
+
+}
+.inputNav{
+    width: 250px;
+    height: 50px;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    color: white;
+    text-align:start;
+    padding-left: 40px;
+}
+.inputNav:hover,.inputNav:active{
+    background-color: #B19357;
+}
+
+.dropdown{
+   padding: 100px 0px 0px 20px;
+}
+
+/* dropdown nativo */
+.drop_nav{
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.area_click_drop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 200px;
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.area_click_drop p{
+    margin: 0;
+}
+.area_click_drop svg{
+    margin-left: 15px;
+    margin-bottom: -5px;
+}
+.area_droped_nav{
+    padding: 10px 0;
+    width: 200px;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -200px;
+    display: none;
+    flex-direction: column;
+}
+.area_droped_nav a{
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.icones{
+    position: relative;
+    color: white;
+    top: 38px;
+    left: -108px;
+}
+
+.imagemLogoMobile{
+    height: 70px;
+    padding-left: 50px;
+}
+.openMenu{
+    height: 70px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+}
+.openMenu svg{
+    height: 40px;
+}

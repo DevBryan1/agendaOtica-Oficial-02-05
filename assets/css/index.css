@@ -1,0 +1,76 @@
+
+.box-ouro{
+    width: 300px;
+    height: 150px;
+    text-align: center;    
+}
+.box-hora{
+    width: 300px;
+    height: 150px;
+    text-align: center;
+}
+
+.box-clima{
+    text-align: center;
+    width: 300px;
+    height: 150px;
+}
+
+.boxes{
+    margin-top: 100px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.box-clima,.box-hora,.box-ouro{
+    -webkit-box-shadow:0px 0px 5px 0px rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    color: white;
+    padding: 2px;
+}
+
+@media screen and (max-width:1280px) {
+    
+    .container-index{
+        margin-left: 90px;
+        margin-top: 100px;
+    }
+    .box-clima,.box-hora,.box-ouro{
+        width: 280px;
+        margin: 5px;
+    }
+    .boxes{
+        justify-content: center;
+    }
+}
+.relogio span{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 40px;
+}
+.box-infos{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+.descricaoTempo{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -25px;
+}
+.imagemTempo{
+    width: 100px;
+}
+strong{
+    font-size: 30px;
+}
+.gramaOuro{
+    font-weight: 300;
+    font-size: 20px;
+}
+

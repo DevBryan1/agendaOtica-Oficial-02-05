@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+}
+.login{
+    width: 350px;
+    height: 400px;
+    background-color: #363636;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-shadow:0px 0px 5px 0px rgba(255, 255, 255, 0.6);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.6);
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.6);
+}
+input{
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #B19357;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder{
+    color: white;
+    padding-left: 4px;
+}
+
+img{
+    width: 45%;
+    padding-bottom: 3rem;
+}
+.input-usuario, .input-senha{
+    padding-bottom: 2rem;
+}
+#btnEntrar{
+    width: 120px;
+    height: 35px;
+    border: 1px solid #0065eb ;
+    color: white;
+    border-radius: 5px;
+    background-color: #0065eb;
+    font-size: 15px;
+    font-weight: 600;
+    cursor:pointer;
+}
+.fa-regular,.fa-solid{
+    color: white;
+    padding-right: 10px;
+}
+.erro_login{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #f8d7da;
+    border-radius: 10px;
+    border: 1px solid #f1aeb5;
+    font-size: 18px;   
+}
