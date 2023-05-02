@@ -22,8 +22,10 @@ class Cliente {
                 "image/jpg",
                 "image/webp"
             ];
-            echo '<pre>';
-            print_r($formatosImg);
+            if(in_array($img['type'],$formatosImg)){
+                
+            }
+           
 
         }else{
          echo 'Não veio';
