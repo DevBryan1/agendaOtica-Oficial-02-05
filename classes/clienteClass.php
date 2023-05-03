@@ -15,7 +15,6 @@ class Cliente {
     #Verificando se a imagem está sendo puxada
     public function dadosCliente($nome, $telefone, $email, $comentario, $img){
         if($img['error'] == 0){
-            echo 'Veio';
             $formatosImg = [
                 "image/png",
                 "image/jpeg",
@@ -23,7 +22,9 @@ class Cliente {
                 "image/webp"
             ];
             if(in_array($img['type'],$formatosImg)){
-                
+                $nome_img = self::nomeCliente($nome);
+                $path = '../assets/uploadsReceita/';
+                $imagem = self::salvarImagens($img, $nome_img, $path);
             }
            
 
@@ -31,6 +32,29 @@ class Cliente {
          echo 'Não veio';
         }
     }
+
+    static function nomeCliente($nome){
+        $n = explode(' ',$nome);
+        $n = implode('_',$n);
+        $n = strtolower($n);
+        $hash = md5(time().rand(99,999999));
+        $nome_img = $n.'_'.$hash;
+        return $nome_img;
+    }
+
+    public function salvarImagens($img, $nome_img, $path){
+        $types = [
+            'image/png' => 'png',
+            'image/jpg' => 'jpg',
+            'image/jpeg' => 'jpeg',
+            'image/webp' => 'webp'
+        ];
+        $type = $types[$img['type']];
+        $path_final = $path.$nome_img.'.'.$type;
+        move_uploaded_file($img['tmp_name'], $path_final);
+        return $path_final;
+    }
+
 }
 //receber filtrar e validar dados 
 if(isset($_POST["name"])){    
