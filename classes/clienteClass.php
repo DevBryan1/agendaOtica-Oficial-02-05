@@ -31,6 +31,9 @@ class Cliente {
         }else{
          echo 'Não veio';
         }
+        if(self::SalvarNoDB($nome, $telefone, $email, $comentario, $imagem)){
+            //tudo ok
+        }
     }
 
     static function nomeCliente($nome){
@@ -54,6 +57,19 @@ class Cliente {
         move_uploaded_file($img['tmp_name'], $path_final);
         return $path_final;
     }
+
+    public function SalvarNoDB($nome, $telefone, $email, $comentario, $path_final){
+        $sql = "INSERT INTO clientes (nome, telefone, email, comentario, receita, creat) VALUES (:nome, :email, :telefone, :comentario, :receita, :creat";
+        $sql = $sql->pdo->prepare($sql);
+        $sql->bindValue(':nome', $nome);
+        $sql->bindValue(':telefone', $telefone);
+        $sql->bindValue(':email', $email);
+        $sql->bindValue(':comentario', $comentario);
+        $sql->bindValue(':receita', $path_final);
+        $sql->bindValue(':creat', date('Y-m-d H:i:s'));
+        $sql->execute();
+        echo 'Adicionado';
+    }  
 
 }
 //receber filtrar e validar dados 
