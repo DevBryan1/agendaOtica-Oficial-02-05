@@ -5,6 +5,7 @@ class Cliente {
 
     #conectando ao banco de dados
     private $pdo;
+
     public function __construct(){
         $dbname = 'banco_soares';
         $dbuser = 'root';
@@ -59,8 +60,8 @@ class Cliente {
     }
 
     public function SalvarNoDB($nome, $telefone, $email, $comentario, $path_final){
-        $sql = "INSERT INTO clientes (nome, telefone, email, comentario, receita, creat) VALUES (:nome, :email, :telefone, :comentario, :receita, :creat";
-        $sql = $sql->pdo->prepare($sql);
+        $sql = "INSERT INTO clientes (nome, telefone, email, comentario, receita, creat) VALUES (:nome, :email, :telefone, :comentario, :receita, :creat)";
+        $sql = $this->pdo->prepare($sql);
         $sql->bindValue(':nome', $nome);
         $sql->bindValue(':telefone', $telefone);
         $sql->bindValue(':email', $email);
@@ -68,7 +69,8 @@ class Cliente {
         $sql->bindValue(':receita', $path_final);
         $sql->bindValue(':creat', date('Y-m-d H:i:s'));
         $sql->execute();
-        echo 'Adicionado';
+        $_SESSION['addBd'] = 'Cliente'.$nome.'adicionado com sucesso';
+        header('Location:../dados-cliente.php');
     }  
 
 }
