@@ -25,7 +25,7 @@
     border:none;
     border-bottom: 1px solid #212121;
     outline: none;
-    width: 200px;
+    width: 230px;
 }
 input::placeholder{
     color: #212121;
@@ -62,6 +62,9 @@ input::placeholder{
     padding: 5px;
     font-size: large;
     background-color: rgb(17, 106, 165);
+}
+.btnSalvar{
+    color: white;
 }
 .btnLimpar{
     background-color: transparent;
@@ -120,4 +123,20 @@ textarea{
 #receitaCarregada{
     max-width: 500px;
     max-height: 300px;
+}
+.searchCliente{
+    position: absolute;
+    top: 30px;
+    left: 320px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #0d6efd;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.searchCliente svg{
+    margin-left: 10px;
 }

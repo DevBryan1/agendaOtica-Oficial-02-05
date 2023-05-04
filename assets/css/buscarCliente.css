@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+.body-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.card-busca{    
+    width: 500px;
+    height: 500px;
+    border-radius: 10px ;
+    background-color: white;
+    -webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.voltarInicio{
+    position: absolute;
+    top: 30px;
+    left: 320px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #0d6efd;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.voltarInicio svg{
+    margin-right: 10px;
+}
+.searchName{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0px 0px 20px ;
+}
+.searchName input::placeholder{
+    padding-left: 5px;
+}
+.searchName input{
+    width: 400px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid black;
+}
+
+h4{
+    margin-top: 10px;
+}

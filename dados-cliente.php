@@ -39,6 +39,8 @@ require 'partials/menu.php';
 <!-- aqui começa o site **e aqui dentro -->
 
 <div class="body-site">
+    <a href="buscarCliente.php"><button class="searchCliente" >Buscar Cliente <i class="fa-solid fa-magnifying-glass"></i></button></a>
+
     <div class="cardCadastro">
         <h1>Dados do Cliente</h1>
         <form action="classes/clienteClass.php" class="formulario" method="post" id="dados" enctype="multipart/form-data">
