@@ -14,7 +14,7 @@ $(document).ready(function(){
                     console.log('pesquisando...')
                 },
                 success:function(ee){
-                    console.log(ee);
+                    $('#getResults').html(ee);
                 }
             });
 

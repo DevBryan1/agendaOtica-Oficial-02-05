@@ -42,14 +42,42 @@ if(isset($_SESSION['user_logado']) && !empty($_SESSION['user_logado'])){
         <div class="card-busca">
             <h4>Buscar Cliente</h4>
             <div class="searchName">
+                <i id="iconeSearch" class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" id="search" name="name" placeholder="Nome ou Email:">
             </div>
-            <div class="receberResultados">
-                
+            <div id="getResults" class="receberResultados">
+               
             </div>
-
         </div>
-
+        <div id="fade"></div>
+        <div id="modal">
+            <div class="topModal">
+                <h4>Dados do Cliente</h4>
+                <i id="closedX" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="bodyModal">
+                <div class="informacoesCliente">
+                    <div class="clientName">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" value="William">
+                    </div>
+                    <div class="clientTelefone">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" name="telefone" value="(51)9652-9864">
+                    </div>
+                    <div class="clientEmail">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" value="bryanmellodoc@gmail.com">
+                    </div>
+                    <div class="clientComent">
+                        <label for="coment">O que orçou:</label>
+                        <input type="text" name="coment" value="Bla bla bla" >
+                    </div>
+                    <button>Ver Receita</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php
     require 'partials/foot.php';
 ?>

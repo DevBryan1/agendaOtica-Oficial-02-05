@@ -39,20 +39,159 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin: 10px 0px 0px 20px ;
+    justify-content: center;
+    margin-top: 10px;
+    margin-right: 20px;
 }
-.searchName input::placeholder{
-    padding-left: 5px;
-}
+
 .searchName input{
     width: 400px;
     outline: none;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
-    border: 1px solid black;
+    background-color: #dadde0;
+    padding-left: 40px;
 }
 
 h4{
     margin-top: 10px;
+}
+#iconeSearch{
+    background-color: #dadde0;
+    position: relative;
+    left: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    width: 18px;
+}
+.user_list{
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    border-left: 5px solid #3d3d3d;
+    padding-left: 8px;
+}
+.user_list:hover{
+    background-color: #f1f1f1;
+}
+.receberResultados{
+    width: 410px;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.receberResultados a {
+    color: #3d3d3d;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+}
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    display: flex;
+    transition: all linear .2s;
+}
+#modal{
+    -webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: white;
+    transition: opacity 1.5s;
+}
+.topModal{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #cecece;
+}
+.topModal h4{
+    margin-right: 200px;
+}
+.topModal svg {
+    font-size: 25px;
+    cursor: pointer;
+}
+.bodyModal{
+    width: 100%;
+    height: 350px;
+}
+.informacoesCliente {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 480px;
+}
+.informacoesCliente button {
+    outline: none;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0065eb;
+    margin: 5px 0px 0px 150px;
+    color: white;
+    font-weight: 600;
+}
+.clientName, .clientTelefone, .clientEmail, .clientComent{
+    margin: 5px 0px 5px 5px;
+}
+.clientName label , .clientTelefone label , .clientEmail label , .clientComent label {
+    margin-left: 10px;
+}
+.clientName input{
+    margin-left: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding-left: 8px;
+    outline: none;
+}
+.clientTelefone input {
+    width: 100%;
+    margin-left: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    outline: none;
+}
+.clientEmail input {
+    width: 100%;
+    margin-left: 5px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+.clientComent input {
+    width: 100%;
+    height: 50px;
+    margin-left: 5px;
+    padding-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
 }

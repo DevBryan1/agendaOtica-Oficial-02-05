@@ -24,7 +24,7 @@ $(document).ready(function(){
 
     $('#closedX').on('click', function(){
         fecharModal();
-    });
+    })
 
     $('#fade').on('click', function(){
         fecharModal();
@@ -33,7 +33,6 @@ $(document).ready(function(){
     //código antigo usado 
 
     $('.btn_add_img').on('click', function(){
-       
         $('#receita').click();
     });
 
