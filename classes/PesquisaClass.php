@@ -27,7 +27,7 @@ class Buscar {
     public function mostrarDados($dados){
         $html = '';
         foreach($dados as $d){
-            $html .= '<a href="#link"><div class="user_list">'.$d['nome'].'</div></a>';
+            $html .= '<a id="showresultado" href="#link"><div id="resultado" class="user_list">'.$d['nome'].'</div></a>';
         }
         echo $html;
 
