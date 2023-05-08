@@ -46,7 +46,7 @@ if(isset($_SESSION['user_logado']) && !empty($_SESSION['user_logado'])){
                 <input type="text" id="search" name="name" placeholder="Nome ou Email:">
             </div>
             <div id="getResults" class="receberResultados">
-               
+                <a href="#link"><div data-nome="nome" data-email="email" data-img="img" data-telefone="telefone" data-desc="desc" data-ref="id" class="user_list">Daniel Soares</div></a>
             </div>
         </div>
         <div id="fade"></div>

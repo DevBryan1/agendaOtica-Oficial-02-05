@@ -17,8 +17,6 @@ $(document).ready(function(){
     $('#fade').on('click', function(){
         fecharModal();
     })
-
-   
     
     $('#search').on('focus', function(){
        $(this).on('keyup', function(){
@@ -42,4 +40,12 @@ $(document).ready(function(){
         }
        });
     })
+
+    $('.user_list').each(function(index){
+        $(this).on('click', function(){
+             console.log($(this).attr('data-nome'));
+             abrirModal();
+        });
+    });
+    
 });
