@@ -10,9 +10,9 @@ $(document).ready(function(){
         $('#modal').css('display', 'none')
     }
 
-    $('#closedX').on('click', function(){
+    $('#btnFechar').on('click', function(){
         fecharModal();
-    })
+    });
 
     $('#fade').on('click', function(){
         fecharModal();
@@ -40,12 +40,5 @@ $(document).ready(function(){
         }
        });
     })
-
-    $('.user_list').each(function(index){
-        $(this).on('click', function(){
-             console.log($(this).attr('data-nome'));
-             abrirModal();
-        });
-    });
     
 });

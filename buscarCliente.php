@@ -46,14 +46,14 @@ if(isset($_SESSION['user_logado']) && !empty($_SESSION['user_logado'])){
                 <input type="text" id="search" name="name" placeholder="Nome ou Email:">
             </div>
             <div id="getResults" class="receberResultados">
-                <a href="#link"><div data-nome="nome" data-email="email" data-img="img" data-telefone="telefone" data-desc="desc" data-ref="id" class="user_list">Daniel Soares</div></a>
+                
             </div>
         </div>
         <div id="fade"></div>
         <div id="modal">
             <div class="topModal">
                 <h4>Dados do Cliente</h4>
-                <i id="closedX" class="fa-solid fa-xmark"></i>
+                <i id="btnClose" class="fa-solid fa-xmark"></i>
             </div>
             <div class="bodyModal">
                 <div class="informacoesCliente">
