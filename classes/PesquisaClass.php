@@ -42,12 +42,12 @@ class Buscar {
                         <input type="text" name="name" value="William" id="nomeCliente">
                     </div>
                     <div class="clientTelefone">
-                        <label for="telefone">Telefone:</label>
-                        <input type="text" name="telefone" value="(51)9652-9864" id="telefoneCliente">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" value="(51)9652-9864" id="telefoneCliente">
                     </div>
                     <div class="clientEmail">
-                        <label for="email">Email:</label>
-                        <input type="text" name="email" value="bryanmellodoc@gmail.com" id="emailCliente">
+                        <label for="telefone">Telefone:</label>
+                        <input type="text" name="telefone" value="bryanmellodoc@gmail.com" id="emailCliente">
                     </div>
                     <div class="clientComent">
                         <label for="coment">O que orçou:</label>
@@ -96,7 +96,7 @@ class Buscar {
             });
         });
         </script>';
-        self::receberLink($d['receita']);
+        //self::receberLink($d['receita']);
         echo $html;
 
     }
@@ -104,8 +104,8 @@ class Buscar {
     public function receberLink($link){
         $l = explode('..',$link);
         $l = $l[1];
-        $url = str_replace("Novo/","",$_SERVER["REQUEST_URI"]);
-        echo $url;
+    //  $url = str_replace("Novo/","",$_SERVER["REQUEST_URI"]);
+      //echo $url;
         exit;
     }
 }
