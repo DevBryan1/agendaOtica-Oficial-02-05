@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-
 }
 .card-busca{    
     width: 500px;
@@ -129,13 +128,11 @@ h4{
     align-items: center;
     border-bottom: 1px solid #cecece;
 }
-.topModal h4{
-    margin-right: 200px;
-}
 .topModal svg {
+    margin-left: 200px;
     font-size: 25px;
+    width: 30px;
     cursor: pointer;
-    width: 50px;
 }
 .bodyModal{
     width: 100%;

@@ -114,6 +114,7 @@ textarea{
 }
 .topModal svg {
     font-size: 25px;
+    width: 50px;
     cursor: pointer;
 }
 .bodyModal{

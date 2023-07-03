@@ -39,8 +39,25 @@ require 'partials/head.php';
 require 'partials/menu.php';
 ?>
 
-<div class="body-armacoes">
-    
+<div class="body-site">
+    <div class="container-comparador">
+        <h1>Comparador de Armações</h1>
+        <div class="inputs">
+            <div class="image-upload">
+                <input type="file" id="image1" accept="image/*" class="file-input">
+                <label for="image1">Selecionar Foto 1</label>
+            </div>
+            <div class="image-upload">
+                <input type="file" id="image2" accept="image/*" class="file-input">
+                <label for="image2">Selecionar Foto 2</label>
+            </div>
+            <button id="btnClear" class="btn-clear">Limpar</button>
+        </div>
+        <div class="image-container">
+            <img id="img1">
+            <img id="img2">
+        </div>
+    </div>
 </div>
 
 <?php

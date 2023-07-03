@@ -53,7 +53,7 @@ if(isset($_SESSION['user_logado']) && !empty($_SESSION['user_logado'])){
         <div id="modal">
             <div class="topModal">
                 <h4>Dados do Cliente</h4>
-                <i class="fa-solid fa-xmark" id="botaoFechar"></i>
+                <i class="fa-solid fa-xmark botaoFechar"></i>
             </div>
             <div class="bodyModal">
                 <div class="informacoesCliente">
@@ -78,6 +78,7 @@ if(isset($_SESSION['user_logado']) && !empty($_SESSION['user_logado'])){
             </div>
         </div>
     </div>
+
 <?php
     require 'partials/foot.php'
 ?>

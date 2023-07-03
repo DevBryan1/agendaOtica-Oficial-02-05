@@ -13,19 +13,18 @@ $(document).ready(function(){
     //abertura e fechamento de modal
 
     function fecharModal(){
-        $('#modal').css('display','none');
-        $('#fade').css('display','none');
+        $('#modal').css('display','none')
+        $('#fade').css('display','none')
     }
 
     function abrirModal(){
-        $('#modal').css('display','flex');
-        $('#fade').css('display','flex');
+        $('#modal').css('display','flex')
+        $('#fade').css('display','flex')
     }
 
     $('#botaoFechar').on('click', function(){
         fecharModal();
     })
-
     $('#fade').on('click', function(){
         fecharModal();
     })
@@ -45,7 +44,6 @@ $(document).ready(function(){
             reader.onload = function(event){
                 $('#receitaCarregada').attr('src', event.target.result);
                     abrirModal ();
-
             }
             reader.readAsDataURL(file);
         }

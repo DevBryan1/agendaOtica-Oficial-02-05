@@ -33,7 +33,9 @@ class Buscar {
         <div id="modal">
             <div class="topModal">
                 <h4>Dados do Cliente</h4>
-                <i class="fa-solid fa-xmark" id="btnClose"></i>
+                <div class="botaoFechar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
             </div>
             <div class="bodyModal">
                 <div class="informacoesCliente">
@@ -61,22 +63,22 @@ class Buscar {
         $html .= '<script type="text/javascript">
 
         function abrirModal(){
-            $("#fade").css("display", "flex");
-            $("#modal").css("display", "flex");
-        };
+            $("#fade").css("display", "flex")
+            $("#modal").css("display", "flex")
+        }
     
         function fecharModal(){
-            $("#fade").css("display", "none");
-            $("#modal").css("display", "none");
-        };
+            $("#fade").css("display", "none")
+            $("#modal").css("display", "none")
+        }
     
-        $("#btnClose").on("click", function(){
+        $(".botaoFechar").on("click", function(){
             fecharModal();
-        });
+        })
     
         $("#fade").on("click", function(){
             fecharModal();
-        });
+        })
 
         $(".user_list").each(function(index){
             $(this).on("click", function(){
