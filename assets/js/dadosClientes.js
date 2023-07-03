@@ -22,7 +22,7 @@ $(document).ready(function(){
         $('#fade').css('display','flex');
     }
 
-    $('#closedX').on('click', function(){
+    $('#botaoFechar').on('click', function(){
         fecharModal();
     })
 

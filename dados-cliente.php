@@ -73,7 +73,7 @@ require 'partials/menu.php';
         <div id="modal">
             <div class="topModal">
                 <h4>Preview da Receita</h4>
-                <i id="closedX" class="fa-solid fa-xmark"></i>
+                <i id="botaoFechar" class="fa-solid fa-xmark"></i>
             </div>
             <div class="bodyModal">
                 <img src="#"  alt="" id="receitaCarregada">

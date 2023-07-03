@@ -65,8 +65,6 @@ require 'partials/menu.php';
         </div>    
 </div>
 
-
-
 <?php
     require 'partials/foot.php'
 ?>

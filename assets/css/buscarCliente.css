@@ -135,6 +135,7 @@ h4{
 .topModal svg {
     font-size: 25px;
     cursor: pointer;
+    width: 50px;
 }
 .bodyModal{
     width: 100%;
